@@ -13,13 +13,13 @@ include ('includes/header.html');
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/banner4.png" alt="First slide">
+                    <img class="d-block w-100" src="img/banner3.png" alt="First slide">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="img/banner2.png" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/banner3.png" alt="Third slide">
+                    <img class="d-block w-100" src="img/banner4.png" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -105,6 +105,9 @@ echo "<p class='header-title'>DANH MỤC SẢN PHẨM</p>";
         echo "<p><b>{$rows['Cau_hinh']}</b></p>"; 
          
        echo "<p class='price'>{$rows['Gia']}<span>đ</span></p>";
+
+          echo "<a href='ThongtinSanpham.php?mamay={$rows[0]}' class='delete-button'>Xem chi tiết</a>";
+
 
 
               
