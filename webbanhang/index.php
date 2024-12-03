@@ -26,6 +26,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             die('Không thể kết nối: ' . mysqli_connect_error());
         }
 
+    //kiem tra thong tin dang nhap
         $sql = "SELECT * FROM user WHERE Ten_dang_nhap='$username' AND Mat_khau='$password'";
         $result = mysqli_query($conn, $sql);
 

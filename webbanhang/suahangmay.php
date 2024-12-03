@@ -1,5 +1,4 @@
 <?php
-// This script performs an INSERT query to add a record to the users table.
 
 $page_title = 'Cập nhập thông tin hãng laptop';
 include('includes/header.html');

@@ -84,7 +84,7 @@ if (isset($_POST['Manguoidung'])) {
     } elseif (strpos($maNguoiDung, 'NV') === 0) {
         $Loainguoidung = 'Nhân viên';
     } else {
-        $errors[] = 'Mã người dùng không hợp lệ. Vui lòng nhập lại!';
+        $errors[] = 'Mã người dùng bắt đầu bằng "KH" nếu là khách hàng - "NV" nếu là nhân viên . Vui lòng nhập lại!';
     }
     if (!isset($errors)) {
         $Loainguoidung = mysqli_real_escape_string($dbc, trim($Loainguoidung));
